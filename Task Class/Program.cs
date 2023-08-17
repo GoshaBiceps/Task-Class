@@ -8,16 +8,16 @@ namespace Task_Class
         {
             Player player = new Player("Max", 100, 50, 23);
 
-            player.ShowDataPlayer();
+            player.ShowData();
         }
     }
 
     class Player
     {
-        public string Name;
-        public int Health;
-        public int Armor;
-        public int Damage;
+        private string Name;
+        private int Health;
+        private int Armor;
+        private int Damage;
 
         public Player(string name, int health, int armor, int damage)
         {
@@ -27,7 +27,7 @@ namespace Task_Class
             Damage = damage;
         }
 
-        public void ShowDataPlayer()
+        public void ShowData()
         {
             Console.WriteLine($"Имя игрока: {Name}\nЗдоровье игрока: {Health}\nБроня игрока: {Armor}\nУрон Игрока: {Damage}");
         }
