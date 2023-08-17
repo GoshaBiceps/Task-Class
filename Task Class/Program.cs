@@ -6,9 +6,9 @@ namespace Task_Class
     {
         static void Main(string[] args)
         {
-            Player max = new Player("Max", 100, 50, 23);
+            Player player = new Player("Max", 100, 50, 23);
 
-            max.ShowDataPlayer();
+            player.ShowDataPlayer();
         }
     }
 
