@@ -14,22 +14,22 @@ namespace Task_Class
 
     class Player
     {
-        private string Name;
-        private int Health;
-        private int Armor;
-        private int Damage;
+        private string _name;
+        private int _health;
+        private int _armor;
+        private int _damage;
 
         public Player(string name, int health, int armor, int damage)
         {
-            Name = name;
-            Health = health;
-            Armor = armor;
-            Damage = damage;
+            _name = name;
+            _health = health;
+            _armor = armor;
+            _damage = damage;
         }
 
         public void ShowData()
         {
-            Console.WriteLine($"Имя игрока: {Name}\nЗдоровье игрока: {Health}\nБроня игрока: {Armor}\nУрон Игрока: {Damage}");
+            Console.WriteLine($"Имя игрока: {_name}\nЗдоровье игрока: {_health}\nБроня игрока: {_armor}\nУрон Игрока: {_damage}");
         }
     }
 }
